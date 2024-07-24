@@ -1,1 +1,1 @@
-# s3-bucket-pulumi-blueprint
+# s3-bucket-pulumi-module
