@@ -2,13 +2,13 @@ package pkg
 
 import (
 	"github.com/pkg/errors"
-	"github.com/plantoncloud/planton-cloud-apis/zzgo/cloud/planton/apis/code2cloud/v1/aws/s3bucket/model"
+	"github.com/plantoncloud/planton-cloud-apis/zzgo/cloud/planton/apis/code2cloud/v1/aws/s3bucket"
 	"github.com/plantoncloud/pulumi-module-golang-commons/pkg/provider/aws/pulumiawsprovider"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
 type ResourceStack struct {
-	Input  *model.S3BucketStackInput
+	Input  *s3bucket.S3BucketStackInput
 	Labels map[string]string
 }
 
