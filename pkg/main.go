@@ -14,9 +14,9 @@ func Resources(ctx *pulumi.Context, stackInput *s3bucket.S3BucketStackInput) err
 	_, err := aws.NewProvider(ctx,
 		"native-provider",
 		&aws.ProviderArgs{
-			AccessKey: pulumi.String(awsCredential.Spec.AccessKeyId),
-			SecretKey: pulumi.String(awsCredential.Spec.SecretAccessKey),
-			Region:    pulumi.String(awsCredential.Spec.Region),
+			AccessKey: pulumi.String(awsCredential.AccessKeyId),
+			SecretKey: pulumi.String(awsCredential.SecretAccessKey),
+			Region:    pulumi.String(awsCredential.Region),
 		})
 	if err != nil {
 		return errors.Wrap(err, "failed to create aws provider")
