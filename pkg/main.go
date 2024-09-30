@@ -1,13 +1,13 @@
 package pkg
 
 import (
+	s3bucketv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/aws/s3bucket/v1"
 	"github.com/pkg/errors"
-	"github.com/plantoncloud/project-planton/apis/zzgo/cloud/planton/apis/code2cloud/v1/aws/s3bucket"
 	"github.com/pulumi/pulumi-aws-native/sdk/go/aws"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
-func Resources(ctx *pulumi.Context, stackInput *s3bucket.S3BucketStackInput) error {
+func Resources(ctx *pulumi.Context, stackInput *s3bucketv1.S3BucketStackInput) error {
 	awsCredential := stackInput.AwsCredential
 
 	//create aws provider using the credentials from the input
