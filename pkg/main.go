@@ -1,7 +1,7 @@
 package pkg
 
 import (
-	s3bucketv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/aws/s3bucket/v1"
+	s3bucketv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/provider/aws/s3bucket/v1"
 	"github.com/pkg/errors"
 	"github.com/pulumi/pulumi-aws-native/sdk/go/aws"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"

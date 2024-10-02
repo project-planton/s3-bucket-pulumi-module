@@ -1,7 +1,7 @@
 package main
 
 import (
-	s3bucketv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/aws/s3bucket/v1"
+	s3bucketv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/provider/aws/s3bucket/v1"
 	"github.com/pkg/errors"
 	"github.com/plantoncloud/pulumi-module-golang-commons/pkg/stackinput"
 	"github.com/plantoncloud/s3-bucket-pulumi-module/pkg"
